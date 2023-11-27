@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/11/2023 às 08:49
+-- Tempo de geração: 27/11/2023 às 17:58
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -96,6 +96,14 @@ CREATE TABLE `valorespadroes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Despejando dados para a tabela `valorespadroes`
+--
+
+INSERT INTO `valorespadroes` (`id`, `sexo`, `valor_min`, `valor_max`) VALUES
+(1, 'masculino', 23, 336),
+(2, 'feminino', 12, 306);
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -177,7 +185,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `valorespadroes`
 --
 ALTER TABLE `valorespadroes`
-  MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restrições para tabelas despejadas
